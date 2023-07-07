@@ -12,9 +12,9 @@ do
     echo "[4] Scan for Malware"
     echo "[5] Check System Files"
     echo "[6] Check for Unauthorized Users"
-    echo "[7] Exit"
+    echo "[0] Exit"
     echo "======================="
-    echo -n "Enter your menu choice [1-7]: "
+    echo -n "Enter your menu choice [0-6]: "
 
     read choice
 
@@ -47,7 +47,7 @@ do
            cat /etc/passwd
            read -p "Press [Enter] key to continue..." readEnterKey ;;
 
-        7) exit 0 ;;
+        0) exit 0 ;;
 
         *) echo "Invalid option"
            read -p "Press [Enter] key to continue..." readEnterKey ;;
